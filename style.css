@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f8;
+    font-family: "gt-walsheim", arial, helvetica, sans-serif;
+}
+
+.card {
+    border-radius: 15px;
+    margin: 1rem;
+    border: 1px solid #f8f8f8;
+    -webkit-box-shadow: 0 7px 17px 0 rgba(0,0,0,0.06);
+}
+
+img {
+    border-radius: 15px;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.card-text {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+}
+
+.btn-quiz {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 1em 2em;
+}
+
+#response {
+    position: absolute;
+    bottom: 0;
+}
+
