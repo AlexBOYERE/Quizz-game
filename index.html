@@ -8,16 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <h5>Challenge</h5>
+    <strong id="score">0</strong>
+    <small id="record">0</small>
+</header>
 <div class="container mt-5">
     <div class="card d-flex flex-row">
-        <img src="14-wikimedia_saguaro.jpg" alt="Image" class="img-rounded m-3 flex-shrink-0" width="200" height="200">
-        <div class="card-body flex-grow-1">
+        <img id="image" src="14-wikimedia_saguaro.jpg" alt="Image" class="img-rounded m-3 flex-shrink-0" width="200" height="200">
+        <div id="quiz" class="card-body flex-grow-1">
             <h5 class="card-title text-primary">Vrai ou faux ?</h5>
-            <p class="card-text">Le plus grand cactus au monde appartient à l’espèce Pachycereus pringlei, selon le livre Guinness des records.</p>
+            <p id="question" class="card-text">Le plus grand cactus au monde appartient à l’espèce Pachycereus pringlei, selon le livre Guinness des records.</p>
             <div id="response" class="d-flex justify-content-start align-items-end mb-3">
-                <button class="btn btn-primary btn-quiz btn-lg me-2">Vrai</button>
-                <button class="btn btn-primary btn-quiz btn-lg">Faux</button>
-                <button onclick="getQuestionFromServer()" class="d-none btn btn-primary btn-quiz btn-lg">Passer à la question suivante</button>
+                <button id="btnTrue" onclick="getResponseFromUser(true)" class="btn btn-primary btn-quiz btn-lg me-2">Vrai</button>
+                <button id="btnFalse" onclick="getResponseFromUser(false)" class="btn btn-primary btn-quiz btn-lg">Faux</button>
+            </div>
+        </div>
+        <div id="explication" class="card-body flex-grow-1">
+            <h5 id="title" class="card-text">...</h5>
+            <p id="description">...</p>
+            <div class="d-flex justify-content-start align-items-end mb-3">
+                <button id="btnNext" onclick="getQuestionFromServer()" class="btn btn-primary btn-quiz btn-lg">Passer à la question suivante</button>
             </div>
         </div>
     </div>
