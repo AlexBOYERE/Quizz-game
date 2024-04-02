@@ -42,7 +42,7 @@ img {
     padding: 1em 2em;
 }
 
-#response {
+.div-btn {
     position: absolute;
     bottom: 0;
 }

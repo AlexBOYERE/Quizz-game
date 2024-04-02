@@ -15,18 +15,18 @@
 </header>
 <div class="container mt-5">
     <div class="card d-flex flex-row">
-        <img id="image" src="14-wikimedia_saguaro.jpg" alt="Image" class="img-rounded m-3 flex-shrink-0" width="200" height="200">
+        <img id="image" src="" alt="Image" class="img-rounded m-3 flex-shrink-0" width="200" height="200">
         <div id="quiz" class="card-body flex-grow-1">
             <h5 class="card-title text-primary">Vrai ou faux ?</h5>
-            <p id="question" class="card-text">Le plus grand cactus au monde appartient à l’espèce Pachycereus pringlei, selon le livre Guinness des records.</p>
-            <div id="response" class="d-flex justify-content-start align-items-end mb-3">
+            <p id="question" class="card-text">...</p>
+            <div class="d-flex justify-content-start align-items-end mb-3 div-btn">
                 <button id="btnTrue" onclick="getResponseFromUser(true)" class="btn btn-primary btn-quiz btn-lg me-2">Vrai</button>
                 <button id="btnFalse" onclick="getResponseFromUser(false)" class="btn btn-primary btn-quiz btn-lg">Faux</button>
             </div>
         </div>
         <div id="explication" class="card-body flex-grow-1">
             <h5 id="title" class="card-text">...</h5>
-            <p id="description">...</p>
+            <strong id="response"></strong><p id="description">...</p>
             <div class="d-flex justify-content-start align-items-end mb-3">
                 <button id="btnNext" onclick="getQuestionFromServer()" class="btn btn-primary btn-quiz btn-lg">Passer à la question suivante</button>
             </div>
